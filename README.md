@@ -21,7 +21,7 @@ Just run `npm install` in this directory.
 
 ## CDF cli
 You will have to authenticate by running
-`npm run cdf login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
+`node cdf-cli/main.js login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
 
 # How to create a data model
 ### Apply storage
@@ -32,11 +32,11 @@ API docs: https://pr-ark-codegen-1646.specs.preview.cogniteapp.com/v1.json.html#
 
 ### Create API
 To create an API (a GraphQL end point), we can run this:
-`npm run cdf solutions api create --externalId="demo-api" --description="Demo API"`
+`node cdf-cli/main.js solutions api create --externalId="demo-api" --description="Demo API"`
 
 ### Deploy API version
 A deployed API has the /graphql end point and is binded to the data in the DMS API. 
-`npm run cdf solutions api versions publish --externalId="demo-api" --apiVersion=1 --bindings=./datamodel/bindings.json --file=./datamodel/schema.graphql`
+`node cdf-cli/main.js solutions api versions publish --externalId="demo-api" --apiVersion=1 --bindings=./datamodel/bindings.json --file=./datamodel/schema.graphql`
 
 # How to populate the data model
 First ingest data into RAW. Go to https://fusion.cognite.com/power-ops-staging/raw?env=bluefield to create a RAW database.
