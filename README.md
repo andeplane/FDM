@@ -14,6 +14,8 @@ To access these APIs, you need a token for authentication. We have a small Pytho
 You will need to have installed Python and Node.js (choose version 16).
 Guide on how to install Node.js: https://nodejs.org/en/
 
+Install msal: `pip3 install msal`
+
 ## Install dependencies
 Just run `npm install` in this directory.
 
@@ -21,7 +23,7 @@ Just run `npm install` in this directory.
 In addition, let's install the CDF cli tool
 `npm install -g npm install @cognite/cdf-cli`
 You will have to authenticate by running
-`cdf login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
+`npm run cdf login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
 
 # How to create a data model
 ### Apply storage
@@ -32,11 +34,11 @@ API docs: https://pr-ark-codegen-1646.specs.preview.cogniteapp.com/v1.json.html#
 
 ### Create API
 To create an API (a GraphQL end point), we can run this:
-`cdf solutions api create --externalId="demo-api" --description="Demo API"`
+`npm run cdf solutions api create --externalId="demo-api" --description="Demo API"`
 
 ### Deploy API version
 A deployed API has the /graphql end point and is binded to the data in the DMS API. 
-`cdf solutions api versions publish --externalId="demo-api" --apiVersion=1 --bindings=./datamodel/bindings.json --file=./datamodel/schema.graphql`
+`npm run cdf solutions api versions publish --externalId="demo-api" --apiVersion=1 --bindings=./datamodel/bindings.json --file=./datamodel/schema.graphql`
 
 # How to populate the data model
 First ingest data into RAW. Go to https://fusion.cognite.com/power-ops-staging/raw?env=bluefield to create a RAW database.
