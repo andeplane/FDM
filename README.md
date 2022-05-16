@@ -20,8 +20,6 @@ Install msal: `pip3 install msal`
 Just run `npm install` in this directory.
 
 ## CDF cli
-In addition, let's install the CDF cli tool
-`npm install -g npm install @cognite/cdf-cli`
 You will have to authenticate by running
 `npm run cdf login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
 

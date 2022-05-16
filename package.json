@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/andeplane/FDM#readme",
   "dependencies": {
-    "@cognite/cdf-cli": "^0.0.1-alpha.21",
     "node-fetch": "^3.2.4"
   }
 }
