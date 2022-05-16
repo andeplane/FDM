@@ -1,0 +1,49 @@
+{
+  "name": "@cognite/cdf-cli",
+  "version": "0.0.1-alpha.21",
+  "description": "A CLI for Cognite Data Fusion",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cognitedata/platypus.git",
+    "directory": "apps/platypus-cdf-cli"
+  },
+  "author": "Cognite",
+  "license": "Apache-2.0",
+  "main": "./main.js",
+  "engines": {
+    "node": ">=14.18.2"
+  },
+  "bin": {
+    "cdf": "./main.js"
+  },
+  "dependencies": {
+    "@cognite/sdk": "5.4.0",
+    "tslib": "^2.0.0",
+    "yargs": "^17.2.1",
+    "@graphql-codegen/core": "^2.4.0",
+    "graphql": "^15.6.1",
+    "@graphql-codegen/typescript": "^2.4.2",
+    "@graphql-codegen/typescript-operations": "^2.2.2",
+    "@graphql-codegen/typescript-resolvers": "^2.4.3",
+    "@graphql-codegen/typescript-react-apollo": "^3.2.3",
+    "@graphql-codegen/typescript-apollo-angular": "^3.3.2",
+    "cli-table": "^0.3.11",
+    "chalk": "4.1.2",
+    "@azure/msal-node": "^1.3.3",
+    "jwt-decode": "^3.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "open": "^8.4.0",
+    "configstore": "5.0.0",
+    "enquirer": "^2.3.6",
+    "@cognite/sdk-v6": "npm:@cognite/sdk@6.1.1",
+    "update-notifier": "^5.1.0",
+    "debug": "^4.3.2",
+    "mixpanel": "^0.14.0",
+    "conf": "^10.0.3",
+    "uuid": "^8.3.2",
+    "express": "^4.17.2"
+  },
+  "resolutions": {
+    "graphql": "^15.6.1"
+  }
+}
