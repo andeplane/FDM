@@ -1,0 +1,22 @@
+{
+  "name": "fdm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andeplane/FDM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andeplane/FDM/issues"
+  },
+  "homepage": "https://github.com/andeplane/FDM#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.4"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "targetName": "HydroPowerPlant",
+    "dataModelStorageSource": {
+      "externalId": "HydroPowerPlant"
+    }
+  },
+  {
+    "targetName": "HydroPowerReservoir",
+    "dataModelStorageSource": {
+      "externalId": "HydroPowerReservoir"
+    }
+  }
+]

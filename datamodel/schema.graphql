@@ -1,0 +1,11 @@
+type HydroPowerPlant @view {
+  outletLevel: Float
+  mainLossFactor: Float
+  flowsTo: HydroPowerReservoir
+}
+
+type HydroPowerReservoir @view {
+  levelHighestRegulated: Float
+  levelLowestRegulated: Float
+  capacity: Float
+}
