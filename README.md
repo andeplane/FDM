@@ -40,12 +40,13 @@ First ingest data into RAW. Go to https://fusion.cognite.com/power-ops-staging/r
 Then look at `ingest_raw/index.js` (modify if you want to) and run
 `CDF_TOKEN=$(python3 login.py) node ./ingest_raw/index.js`
 
+Move data from RAW into FDM:
 https://fusion.cognite.com/power-ops-staging/transformations?env=bluefield
 Go into transformations and choose `Destination type = Data Model Instances` and pick your model
 (Azure AD tenant for login: poweropsdev.onmicrosoft.com)
 
 Example query:
-`select id as externalId, name from BlogDB.UsersTable`
+`select double(levelHighestRegulated), double(levelLowestRegulated), double(capacity), key as externalId from fdm_demo.HydroPowerReservoir`
 
 # How to query the data using GraphQL API
 https://graphiql-online.com/graphiql
