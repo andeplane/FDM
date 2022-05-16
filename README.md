@@ -14,6 +14,9 @@ To access these APIs, you need a token for authentication. We have a small Pytho
 You will need to have installed Python and Node.js (choose version 16).
 Guide on how to install Node.js: https://nodejs.org/en/
 
+## Install dependencies
+Just run `npm install` in this directory.
+
 ## CDF cli
 In addition, let's install the CDF cli tool
 `npm install -g npm install @cognite/cdf-cli`
