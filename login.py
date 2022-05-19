@@ -4,9 +4,9 @@ import os
 
 from msal import PublicClientApplication, SerializableTokenCache
 
-TENANT_ID = "431fcc8b-74b8-4171-b7c9-e6fab253913b"
-CLIENT_ID = "140df241-50bf-4c16-a965-6fd4e5b87958"
-CDF_CLUSTER = "bluefield"
+TENANT_ID = "0d75f6b8-c6b9-4e84-baca-503e08aa7e4a"
+CLIENT_ID = "71cc6bc1-7f8a-4bef-9c89-0cdadc3b6803"
+CDF_CLUSTER = "greenfield"
 
 CACHE_FILENAME = "token_cache.bin"
 SCOPES = [f"https://{CDF_CLUSTER}.cognitedata.com/.default"]
@@ -39,5 +39,6 @@ def authenticate_azure(app):
 
 
 app = PublicClientApplication(client_id=CLIENT_ID, authority=AUTHORITY_URI, token_cache=create_cache())
-
-print(authenticate_azure(app)["access_token"])
+result = authenticate_azure(app)
+print(result)
+print(result["access_token"])

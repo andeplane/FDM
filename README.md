@@ -10,6 +10,8 @@ Is that ok? Alright, let's move forward.
 ### Prerequisite
 To access these APIs, you need a token for authentication. We have a small Python script to fetch this token. So therefore, you need to be able to run Python in a terminal. To abstract away some the API calls, we are using a cli tool for this. In addition, one of the APIs is not covered using the cli, so we have a couple of convenience scripts that we run using Node.js
 
+`export ENABLE_EXPERIMENTAL_CMDS=true`
+
 ## Python 3 and Node.js
 You will need to have installed Python and Node.js (choose version 16).
 Guide on how to install Node.js: https://nodejs.org/en/
@@ -20,6 +22,8 @@ Install msal: `pip3 install msal`
 Just run `npm install` in this directory.
 
 ## CDF cli
+You have to run `npm install` in the `cdf-cli` folder.
+
 You will have to authenticate by running
 `node cdf-cli/main.js login power-ops-staging --tenant="431fcc8b-74b8-4171-b7c9-e6fab253913b" --cluster=bluefield --client-id="140df241-50bf-4c16-a965-6fd4e5b87958"`
 
