@@ -44,6 +44,14 @@ Just run the command
 
 which will do everything from the files above.
 
+## How to query the data?
+You can go to https://graphiql-online.com and paste in the GraphQL URL
+https://greenfield.cognitedata.com/api/v1/projects/schema-test/schema/api/simple/1/graphql (insert any modifications to CDF cluster, CDF project and name of the space)
+
+You will need to add the header `Authorization: Bearer eyJ0eXAiOiJKV1QiLC...`
+You should then be able to query it like shown in this image:
+![alt text](graphiql.png "Finding token from Chrome")
+
 ## Known issues:
  - You cannot delete spaces or models. Solution if you mess up is to create a new space.
  - The data model cannot be huge yet (100+ types)
