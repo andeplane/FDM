@@ -1,0 +1,28 @@
+{
+  "api": {
+    "externalId": "simple",
+    "description": "Simple",
+    "versions": [
+      {
+        "version": 1,
+        "source": "apiSpec_v1.graphql",
+        "bindings": [
+          {
+            "targetName": "Asset",
+            "dataModelStorageSource": {
+              "externalId": "Asset",
+              "space": "simple"
+            }
+          },
+          {
+            "targetName": "TimeSeries",
+            "dataModelStorageSource": {
+              "externalId": "TimeSeries",
+              "space": "simple"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

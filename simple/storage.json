@@ -1,0 +1,28 @@
+[
+  {
+    "externalId": "Asset",
+    "properties": {
+      "name": {
+        "type": "text",
+        "nullable": true
+      },
+      "description": {
+        "type": "text",
+        "nullable": true
+      }
+    }
+  },
+  {
+    "externalId": "TimeSeries",
+    "properties": {
+      "name": {
+        "type": "text",
+        "nullable": true
+      },
+      "description": {
+        "type": "text",
+        "nullable": true
+      }
+    }
+  }
+]

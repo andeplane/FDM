@@ -1,0 +1,9 @@
+type Asset @view {
+  name: String
+  description: String
+}
+
+type TimeSeries @view {
+  name: String
+  description: String
+}

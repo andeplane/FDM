@@ -1,2 +1,0 @@
-@cognite/cdf-cli
-Apache-2.0
