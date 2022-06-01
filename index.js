@@ -7,7 +7,7 @@ const cdfToken = process.env.CDF_TOKEN;
 // const project = 'integral-develop';
 const project = 'schema-test';
 const projectUrl = `${baseUrl}/api/v1/projects/${project}`;
-const space = 'cfihos20'
+const space = 'simple'
 const debug = false
 
 run();
