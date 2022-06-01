@@ -3,11 +3,12 @@ import fs from 'fs';
 
 // const baseUrl = 'https://westeurope-1.cognitedata.com';
 const baseUrl = 'https://greenfield.cognitedata.com';
+const project = 'schema-test';
+const space = 'simple'
+
 const cdfToken = process.env.CDF_TOKEN;
 // const project = 'integral-develop';
-const project = 'schema-test';
 const projectUrl = `${baseUrl}/api/v1/projects/${project}`;
-const space = 'simple'
 const debug = false
 
 run();

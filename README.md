@@ -14,6 +14,15 @@ and set the environment variable by running
 `export CDF_TOKEN="Bearer eyJ0eXAiOiJKV1QiLC..."` 
 This token is valid around 1 hour I think.
 
+### CDF project configuration
+Look at `index.js`. In the top of the file, you will find
+```
+const baseUrl = 'https://greenfield.cognitedata.com';
+const project = 'schema-test';
+const space = 'simple'
+```
+where you can configure your own CDF project.
+
 ## Creating the data model
 The data model is found in the folder `simple`. The name of this folder should match the variable `space` in `index.js`, and also the space used in the data model files (see the files in `simple`). This should to be consistent across all files. Sorry for not automating this!
 
