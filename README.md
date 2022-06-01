@@ -7,7 +7,7 @@ You need [Node.js](https://nodejs.org/en/)
 Run `npm install`
 
 ### CDF token
-To run the code below, you will need an environment variable `CDF_TOKEN` that you can find from a network request in Chrome (go into Fusion and fetch the RAW databases for instance):
+To run the code below, you will need an environment variable `CDF_TOKEN` that you can find from a network request in Chrome (go into Fusion and fetch the RAW databases for instance). Right click and click `Copy value`:
 ![alt text](token.png "Finding token from Chrome")
 and set the environment variable by running
 
