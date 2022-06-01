@@ -37,7 +37,7 @@ async function POST(url, body) {
     body: JSON.stringify(body),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${cdfToken}`,
+      'Authorization': `${cdfToken}`,
       'cdf-version': 'alpha',
     }
   }).then(res => res.json());
@@ -148,7 +148,7 @@ async function runQuery(queryBody) {
     body: JSON.stringify(queryBody),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${cdfToken}`,
+      'Authorization': `${cdfToken}`,
     }
   }).then(res => res.json()).then(res => {
     if (res.errors) {
