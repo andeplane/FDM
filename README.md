@@ -56,3 +56,5 @@ You should then be able to query it like shown in this image:
  - You cannot delete spaces or models. Solution if you mess up is to create a new space.
  - The data model cannot be huge yet (100+ types)
  - User experience is bad (yep, but will be great)
+ - If you use `extends` (say model `B` extends model `A`), when you create nodes of type `B`, you have to set a value for at least one property in the model `A`.
+ - Sometimes, due to a form for eventual consistency, you might need to run `node index.js` two times :P 
