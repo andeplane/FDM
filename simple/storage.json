@@ -1,28 +1,38 @@
-[
-  {
-    "externalId": "Asset",
-    "properties": {
-      "name": {
-        "type": "text",
-        "nullable": true
-      },
-      "description": {
-        "type": "text",
-        "nullable": true
-      }
-    }
-  },
-  {
-    "externalId": "TimeSeries",
-    "properties": {
-      "name": {
-        "type": "text",
-        "nullable": true
-      },
-      "description": {
-        "type": "text",
-        "nullable": true
-      }
-    }
-  }
-]
+{
+    "items": [
+        {
+            "externalId": "Equipment",
+            "properties": {
+                "name": {
+                    "type": "text",
+                    "nullable": true
+                },
+                "description": {
+                    "type": "text",
+                    "nullable": true
+                },
+                "facility": {
+                    "type": "direct_relation",
+                    "nullable": true,
+                    "targetModel": [
+                        "simple",
+                        "Facility"
+                    ]
+                }
+            }
+        },
+        {
+            "externalId": "Facility",
+            "properties": {
+                "name": {
+                    "type": "text",
+                    "nullable": true
+                },
+                "description": {
+                    "type": "text",
+                    "nullable": true
+                }
+            }
+        }
+    ]
+}

@@ -8,16 +8,16 @@
         "source": "apiSpec_v1.graphql",
         "bindings": [
           {
-            "targetName": "Asset",
+            "targetName": "Equipment",
             "dataModelStorageSource": {
-              "externalId": "Asset",
+              "externalId": "Equipment",
               "space": "simple"
             }
           },
           {
-            "targetName": "TimeSeries",
+            "targetName": "Facility",
             "dataModelStorageSource": {
-              "externalId": "TimeSeries",
+              "externalId": "Facility",
               "space": "simple"
             }
           }

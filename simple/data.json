@@ -1,41 +1,38 @@
 {
-  "Asset": {
+  "Equipment": {
     "spaceExternalId": "simple",
     "model": [
       "simple",
-      "Asset"
+      "Equipment"
     ],
     "overwrite": true,
     "items": [
       {
         "externalId": "IAA_21PT1019",
         "name": "21PT1019",
-        "description": "This is a nice asset"
+        "description": "This is a nice equipment",
+        "facility": "facility1"
       },
       {
         "externalId": "IAA_21PT1017",
         "name": "21PT1017",
-        "description": "This is also a nice asset"
+        "description": "This is also a nice equipment",
+        "facility": "facility1"
       }
     ]
   },
-  "TimeSeries": {
+  "Facility": {
     "spaceExternalId": "simple",
     "model": [
       "simple",
-      "TimeSeries"
+      "Facility"
     ],
     "overwrite": true,
     "items": [
       {
-        "externalId": "IAA_21PT1019.PV",
-        "name": "21PT1019.PV",
-        "description": "This is a nice time series"
-      },
-      {
-        "externalId": "IAA_21PT1017.AlarmByte",
-        "name": "21PT1017.AlarmByte",
-        "description": "This is also a nice time series"
+        "externalId": "facility1",
+        "name": "Main facility",
+        "description": "This is a nice facility"
       }
     ]
   }

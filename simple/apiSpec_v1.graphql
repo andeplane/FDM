@@ -1,9 +1,10 @@
-type Asset @view {
+type Equipment @view {
   name: String
   description: String
+  facility: Facility
 }
 
-type TimeSeries @view {
+type Facility @view {
   name: String
   description: String
 }
